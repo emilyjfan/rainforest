@@ -2,5 +2,7 @@
 <p>All Products:</p>
 
 <% @products.each do |product| %>
-<%= product.name %>, <%= product.description %>, <%= product.price_in_cents %>
+	<ul>
+		<%= link_to(product.name, product_path(product)) %>, <%= product.description %>, <%= product.price_in_cents %> <br/>
+	</ul>
 <% end %>
