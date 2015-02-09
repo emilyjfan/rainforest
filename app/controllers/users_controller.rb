@@ -1,10 +1,10 @@
 class UsersController < ApplicationController
   def new
-  	@new = User.new
+  	@user = User.new
   end
 
   def create
-  	@users = User.new(user_params)
+  	@user = User.new(user_params)
   	if @user.save
   		redirect_to products_url, notice: "Signed up!"
   	else
