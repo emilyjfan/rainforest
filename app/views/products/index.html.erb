@@ -6,3 +6,5 @@
 		<%= link_to(product.name, product_path(product)) %>, <%= product.description %>, <%= product.price_in_cents %> <br/>
 	</ul>
 <% end %>
+
+<%= link_to("Add a New Product", new_product_path) %>
