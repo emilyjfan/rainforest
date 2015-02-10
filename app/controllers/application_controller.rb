@@ -17,4 +17,5 @@ class ApplicationController < ActionController::Base
   		flash[:alert] = "Please log in"
   		redirect_to new_session_path
   	end
+  end
 end
