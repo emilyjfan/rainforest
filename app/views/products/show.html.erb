@@ -2,7 +2,7 @@
 <p>Here is your product!</p>
 
 <%= @product.name %>, <%= @product.description %>, <%=@product.price_in_cents %>
-
+<%= link_to("Edit Product", edit_product_path(@product)) %> 
 
 <h3>Reviews</h3>
 

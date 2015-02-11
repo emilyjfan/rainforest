@@ -1,0 +1,12 @@
+<h1>User Profile</h1>
+
+<h3>Username: <%= @user.name %></h3>
+<h3>Email: <%= @user.email %></h3>
+<h3>Reviews:</h3>
+
+<% @user.reviews.each do |review| %>
+<dl>
+	<dt><%= review.product.name %> (<%= review.created_at %>)</dt>
+	<dd><%= review.comment %></dd> 
+</dl>
+<% end %>
